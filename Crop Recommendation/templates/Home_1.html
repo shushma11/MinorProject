@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - Smart Farming Solutions</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/home.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">AgroTech</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="hero">
+        <div class="container">
+            <h1 class="hero-title">Smart Farming with AgroTech</h1>
+            <p class="hero-subtitle">Optimize your agricultural output with our intelligent crop recommendation system</p>
+            <div class="cta-section">
+                <h3>Start Your Precision Farming Journey Today</h3>
+                <p>Get personalized crop recommendations based on your soil conditions and climate</p>
+                <form action="/predict">
+                    <button type="submit" class="cta-button">Get Crop Recommendation</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AgroTech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

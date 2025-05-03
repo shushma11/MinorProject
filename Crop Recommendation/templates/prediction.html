@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation | AgroTech</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/prediction_css.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">AgroTech</div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="result-container">
+        <div class="result-card">
+            <h2 class="result-title">Crop Recommendation</h2>
+            <div class="result-content">
+                <p>Based on your soil nutrients and climate conditions:</p>
+                <div class="recommendation">
+                    <span>You Should Grow</span>
+                    <div class="crop-result">{{prediction}}</div>
+                </div>
+            </div>
+            <a href="/" class="back-button">Back to Home</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AgroTech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
